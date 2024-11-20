@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,20 +11,31 @@ body {
 
 .container {
     text-align: center;
-    background-color: #fff;
+    background-color: #1e1e1e; /* Dark container background */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.profile-image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Circular image */
+    border: 2px solid #e0e0e0; /* Light border */
 }
 
 h1 {
-    color: #333;
+    color: #e0e0e0;
 }
 
 .fact-display {
     margin: 20px 0;
     font-size: 1.2em;
-    color: #555;
+    color: #b0b0b0;
 }
 
 .btn {
@@ -38,23 +50,4 @@ h1 {
 
 .btn:hover {
     background-color: #0056b3;
-}
-
-.social-links {
-    margin-top: 20px;
-}
-
-.social-links a {
-    display: inline-block;
-    margin: 10px;
-    text-decoration: none;
-    color: #333;
-    font-size: 1em;
-}
-
-.social-icon {
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
-    margin-right: 8px;
 }
