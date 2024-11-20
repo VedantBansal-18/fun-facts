@@ -8,26 +8,32 @@
 </head>
 <body>
     <div class="container">
-        <img src="https://media.licdn.com/dms/image/v2/D4E03AQG8c-nhQEGxKg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1731516986126?e=1737590400&v=beta&t=BS7-UqycerIQ3paylQFRO0qOVgxvmcJWI5NQtOXjV9U" alt="Profile Image" class="profile-image">
+        <img src="profile-image.jpg" alt="Profile Image" class="profile-image">
         <div class="social-links">
             <a href="https://www.instagram.com/unsolved.ved/?__pwa=1" target="_blank">
-                <img src="https://i.pinimg.com/736x/ff/5a/e7/ff5ae72f423c7a1a2e6daf347ff1b5e2.jpg" alt="Instagram" class="social-icon">
+                <img src="instagram-logo.png" alt="Instagram" class="social-icon">
             </a>
             <a href="https://www.linkedin.com/in/vedantbansal18" target="_blank">
-                <img src="https://e7.pngegg.com/pngimages/602/665/png-clipart-linkedin-linkedin-thumbnail.png" alt="LinkedIn" class="social-icon">
+                <img src="linkedin-logo.png" alt="LinkedIn" class="social-icon">
             </a>
             <a href="https://github.com/VedantBansal-18" target="_blank">
-                <img src="https://w7.pngwing.com/pngs/914/758/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner-thumbnail.png" alt="GitHub" class="social-icon">
+                <img src="github-logo.png" alt="GitHub" class="social-icon">
             </a>
             <a href="mailto:vedant.bansal18@gmail.com">
-                <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="Email" class="social-icon">
+                <img src="email-logo.png" alt="Email" class="social-icon">
             </a>
         </div>
         <h1>Random Facts About Vedant</h1>
+        <input type="text" id="user-name" placeholder="Enter your name" class="input-field">
         <div id="fact-display" class="fact-display">
-            Click the button to see a random fact!
+            Enter your name and click the button to see a random fact!
         </div>
         <button id="generate-fact" class="btn">Generate Fact</button>
+        <div class="feedback-section">
+            <h2>Feedback</h2>
+            <textarea id="feedback" placeholder="Write your feedback about Vedant and his work" class="feedback-input"></textarea>
+            <button id="submit-feedback" class="btn">Submit Feedback</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
