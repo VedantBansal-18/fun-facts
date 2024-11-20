@@ -6,7 +6,6 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    border-radius: 50%;
 }
 
 .container {
@@ -43,6 +42,7 @@ h1, h2 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 .btn:hover {
