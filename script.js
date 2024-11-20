@@ -9,6 +9,21 @@ const facts = [
 ];
 
 document.getElementById('generate-fact').addEventListener('click', function() {
+    const userName = document.getElementById('user-name').value;
+    if (userName.trim() === "") {
+        alert("Please enter your name to view a fact.");
+        return;
+    }
     const randomIndex = Math.floor(Math.random() * facts.length);
-    document.getElementById('fact-display').textContent = facts[randomIndex];
+    document.getElementById('fact-display').textContent = `${userName}, here's a fact: ${facts[randomIndex]}`;
+});
+
+document.getElementById('submit-feedback').addEventListener('click', function() {
+    const feedback = document.getElementById('feedback').value;
+    if (feedback.trim() === "") {
+        alert("Please enter your feedback before submitting.");
+        return;
+    }
+    alert("Thank you for your feedback!");
+    document.getElementById('feedback').value = ""; // Clear the feedback input
 });
