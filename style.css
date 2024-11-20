@@ -40,9 +40,8 @@ h1, h2 {
     color: #fff;
     background-color: #007bff;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .btn:hover {
